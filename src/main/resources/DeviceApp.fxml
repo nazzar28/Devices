@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="DeviceController">
+    <tabs>
+        <Tab text="Smartphone">
+            <VBox spacing="10" padding="10">
+                <Label text="Name:" />
+                <TextField fx:id="nameField" />
+                <Label text="Price:" />
+                <TextField fx:id="priceField" />
+                <Label text="Weight:" />
+                <TextField fx:id="weightField" />
+                <Label text="Screen Size:" />
+                <TextField fx:id="screenSizeField" />
+                <Label text="Camera Resolution:" />
+                <TextField fx:id="cameraResolutionField" />
+                <Button text="Add" onAction="#addDevice" />
+            </VBox>
+        </Tab>
+        <Tab text="Laptop">
+            <VBox spacing="10" padding="10">
+                <Label text="Name:" />
+                <TextField fx:id="nameField" />
+                <Label text="Price:" />
+                <TextField fx:id="priceField" />
+                <Label text="Weight:" />
+                <TextField fx:id="weightField" />
+                <Label text="RAM Size:" />
+                <TextField fx:id="ramSizeField" />
+                <Label text="Processor Type:" />
+                <TextField fx:id="processorTypeField" />
+                <Button text="Add" onAction="#addDevice" />
+            </VBox>
+        </Tab>
+        <Tab text="Tablet">
+            <VBox spacing="10" padding="10">
+                <Label text="Name:" />
+                <TextField fx:id="nameField" />
+                <Label text="Price:" />
+                <TextField fx:id="priceField" />
+                <Label text="Weight:" />
+                <TextField fx:id="weightField" />
+                <Label text="Battery Life:" />
+                <TextField fx:id="batteryLifeField" />
+                <Label text="Has Stylus:" />
+                <CheckBox fx:id="hasStylusField" />
+                <Button text="Add" onAction="#addDevice" />
+            </VBox>
+        </Tab>
+    </tabs>
+    <VBox spacing="10" padding="10">
+        <Label text="Devices:" />
+        <ListView fx:id="listView" />
+        <Button text="Remove" onAction="#removeDevice" />
+        <Label fx:id="selectedText" />
+    </VBox>
+</TabPane>
